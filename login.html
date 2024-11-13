@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Registration</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Registration Form -->
+    <div id="registerForm">
+      <h2>Sign Up</h2>
+      <label>First Name:</label>
+      <input type="text" id="registerFirstName" required>
+      <label>Last Name:</label>
+      <input type="text" id="registerLastName" required>
+      <label>User ID:</label>
+      <input type="text" id="registerUserId" required>
+      <label>Password:</label>
+      <input type="password" id="registerPassword" required>
+      <button onclick="register()">Register</button>
+      <p>Already have an account? <span onclick="showLogin()">Log In</span></p>
+    </div>
+
+    <!-- Login Form -->
+    <div id="loginForm" style="display: none;">
+      <h2>Log In</h2>
+      <label>User ID:</label>
+      <input type="text" id="loginUserId" required>
+      <label>Password:</label>
+      <input type="password" id="loginPassword" required>
+      <button onclick="login()">Log In</button>
+      <p>Don't have an account? <span onclick="showRegister()">Sign Up</span></p>
+      <p id="error" class="error"></p>
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>                              
